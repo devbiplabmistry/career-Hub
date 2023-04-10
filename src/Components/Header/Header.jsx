@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <nav>
-            <div className="container flex justify-evenly">
+            <div className="container flex justify-evenly align-middle">
                 <h1>Carrer Hub</h1>
-                <ul>
+                <ul className='menu'>
                     <Link to="/home">Home</Link>
                     <Link to="/statistics">Statistics</Link>
                     <Link to="/applied jobs">Applied Jobs</Link>
