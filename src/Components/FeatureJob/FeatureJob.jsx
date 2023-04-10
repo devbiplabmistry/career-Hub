@@ -9,8 +9,10 @@ const FeatureJob = ({fjob}) => {
             <img src={picture} alt="" />
             <h3>{name}</h3>
             <h4>{company}</h4>
-            <h5>{address} <span>{sallary}</span></h5>
-            <button>View Details</button> 
+            <button className='onsite'>Onsite</button>
+            <button className='fulltime'>Full Time</button>
+            <h5>{address} <span className='ml-5'>{sallary}</span></h5>
+            <button className='view_details'>View Details</button> 
            </div>
             
         </div>

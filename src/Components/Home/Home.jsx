@@ -8,11 +8,24 @@ const Home = () => {
   const jobs = useLoaderData();
   const [fjobs, setFjobs] = useState([]);
 
+
   useEffect(() => {
     fetch('Feature.json')
       .then(res => res.json())
       .then(data => setFjobs(data))
+
+
   }, [])
+
+  let Data=[];
+  for (let i= 0; i < fjobs.length; i++) {
+   const element = fjobs[i];
+   if(Data.length < 4){
+     Data.push(element)
+     console.log(Data);
+   }
+
+ }
 
   return (
     <div>
@@ -31,13 +44,17 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-2 container gap-10 mt-10'>
-        {
-          fjobs.map(fjob=><FeatureJob
+      <div className='container f  mt-10 '>
+        <h2>Featured Jobs</h2>
+        <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
+      <div className='grid grid-cols-2 gap-10'>
+      {
+          Data.map(fjob=><FeatureJob
             key={fjob._id}
             fjob={fjob} 
           ></FeatureJob>)
         }
+      </div>
       </div>
 
 

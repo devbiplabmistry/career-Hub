@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <nav>
             <div className="container flex justify-between align-middle">
-                <h1>Carrer Hub</h1>
+                <h1>Jobs Hub</h1>
                 <ul className='menu'>
                     <Link to="/">Home</Link>
                     <Link to="/statistics">Statistics</Link>
