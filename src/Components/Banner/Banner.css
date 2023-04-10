@@ -1,0 +1,28 @@
+.banner-content  h1{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #1A1919;
+}
+.banner-content  h1 span{
+
+    color:#7E90FE;
+}
+.banner-content  p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #757575;
+}
+.btn{
+    padding: 15px 28px;
+    background-color: #7E90FE;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.banner-image img{
+    width: 600px;
+    height: 600px;
+}
