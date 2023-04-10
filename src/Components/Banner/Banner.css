@@ -26,3 +26,7 @@
     width: 600px;
     height: 600px;
 }
+
+.jobs{
+    gap: 25px;
+}
