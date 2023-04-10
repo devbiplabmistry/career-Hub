@@ -8,7 +8,7 @@ const Header = () => {
             <div className="container flex justify-evenly align-middle">
                 <h1>Carrer Hub</h1>
                 <ul className='menu'>
-                    <Link to="/home">Home</Link>
+                    <Link to="/">Home</Link>
                     <Link to="/statistics">Statistics</Link>
                     <Link to="/applied jobs">Applied Jobs</Link>
                     <Link to="blog">Blog</Link>
