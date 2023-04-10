@@ -55,6 +55,7 @@ const Home = () => {
           ></FeatureJob>)
         }
       </div>
+      <button className='seeAlljobs'>See All Jobs</button>
       </div>
 
 
