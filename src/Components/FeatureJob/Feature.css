@@ -1,0 +1,15 @@
+.f_job img{
+width: 250px;
+height: 40px;
+border-radius: 8px;
+text-align: center;
+}
+
+.F_jobs{
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 150px;
+   border: 1px solid #E8E8E8;
+   border-radius: 8px;
+}
