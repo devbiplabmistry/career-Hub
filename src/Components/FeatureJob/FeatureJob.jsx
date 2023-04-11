@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const FeatureJob = ({fjob}) => {
     const {_id,name,sallary,address,company,picture}=fjob
     return (
-        <div className='container F_jobs'>
+        <div className='container F_jobs sm:m-5'>
            <div className='f_job'>
             <img src={picture} alt="" />
             <h3>{name}</h3>

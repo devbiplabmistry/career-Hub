@@ -7,17 +7,19 @@ import FeatureJob from '../FeatureJob/FeatureJob';
 const Home = () => {
   const jobs = useLoaderData();
   const [featurejob, setFeaturejobs] = useState([]);
-  const [feature, setFeture] = useState([])
   useEffect(() => {
     fetch('Feature.json')
-      .then(res => res.json())
-      .then(data => setFeaturejobs(data))
+    .then(res => res.json())
+    .then(data => setFeaturejobs(data))
   }, [])
+  
 
+  const [feature, setFeture] = useState([])
   useEffect(() => {
-    const f = featurejob.slice(0, 4)
+    const f = featurejob.slice(0, 4);
     setFeture(f)
-  }, [])
+  }, [featurejob])
+
 
   const handleOnClick = () => {
     const p =featurejob;
@@ -29,7 +31,7 @@ const Home = () => {
       <div className='container content '>
         <h2>Job Category List</h2>
         <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
-        <div className='grid grid-cols-4 jobs mt-16'>
+        <div className='grid md:grid-cols-4 sm:grid-cols-2 jobs mt-16'>
           {
             jobs.map(job => <JobList
               key={job.id}
@@ -43,7 +45,7 @@ const Home = () => {
       <div className='container f  mt-10 '>
         <h2>Featured Jobs</h2>
         <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
-        <div className='grid grid-cols-2 gap-10'>
+        <div className='md:grid grid-cols-2 gap-10 '>
           {
             feature.map(fjob => <FeatureJob
               key={fjob._id}
