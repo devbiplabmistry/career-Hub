@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getShoppingCart } from '../../utilities/fakedb';
 import { useLoaderData } from 'react-router-dom';
 import Savejob from '../Savejob/Savejob';
+import './Appliedjob.css'
 
 const AppliedJob = () => {
     const jobs=useLoaderData()
@@ -21,6 +22,11 @@ const AppliedJob = () => {
     return (
         <div>
            <div>
+            <h3 className='text-center title'>Applied Jobs</h3>
+            <div className='mt-10'>
+                <button className='fulltime mr-5 absolute right-36 '>Remote</button>
+                <button className='fulltime absolute right-5'>Full Time</button>
+            </div>
             {
                 saveJob.map(job=><Savejob key={job._id} job={job}></Savejob>)
             }

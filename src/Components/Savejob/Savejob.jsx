@@ -5,8 +5,7 @@ const Savejob = ({job}) => {
     const {picture,name,company,address,sallary}=job
     console.log(job);
     return (
-     <div>
-               {/* <h3 className='container text-center'>Applied Jobs</h3> */}
+     <div>           
         <div className='container text-center job '>
             <div className='save-job-container flex gap-x-24'>
                 <div className="save-job-logo">
@@ -22,9 +21,7 @@ const Savejob = ({job}) => {
              <div>
              <button className="save-job-btn">View Details</button>
              </div>
-
-            </div>
-            
+            </div> 
         </div>
      </div>
     );

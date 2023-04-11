@@ -1,7 +1,17 @@
 .save-job-logo img {
-    border-radius: 8px;
+ width: 145px;
+ height: 50px;  
+ background: #F4F4F4;
+}
+.save-job-logo  {
     width: 240px;
     height: 240px;
+    background: #F4F4F4;
+border-radius: 8px;
+border: 1px solid #F4F4F4;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .job{
