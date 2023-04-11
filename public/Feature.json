@@ -5,7 +5,9 @@
       "name": "Technical Database Engineer",
       "company": "Google LLC",
       "address": "Dhaka, Bangladesh",
-      "sallary": "Salary : 100K - 150K" 
+      "sallary": "Salary : 100K - 150K" ,
+      "phone": "+88 01726987458" ,
+      "email": "info@google.com" 
     },
     {
       "_id": "2",
@@ -13,7 +15,10 @@
       "name": "Senior Product Designer",
       "company": "Netflix",
       "address": "Dhaka, Bangladesh",
-      "sallary": "Salary : 100K - 150K"  
+      "sallary": "Salary : 100K - 150K"  ,
+      "phone": "+88 01726987475" ,
+      "email": "info@netflix.com" 
+
     },
     {
       "_id": "3",
@@ -21,7 +26,9 @@
       "name": "Software Engineer",
       "company": "Tesla",
       "address": "Dhaka, Bangladesh",
-      "sallary": "Salary : 100K - 150K"
+      "sallary": "Salary : 100K - 150K",
+      "phone": "+88 01726987457" ,
+      "email": "info@texla.com" 
     },
     {
       "_id": "4",
@@ -29,7 +36,9 @@
       "name": "Technical Database Engineer",
       "company": "Google LLC",
       "address": "Dhaka, Bangladesh",
-      "sallary": "Salary : 100K - 150K"
+      "sallary": "Salary : 100K - 150K",
+      "phone": "+88 01726987454" ,
+      "email": "info@google.com" 
     },
     {
       "_id": "5",
@@ -37,7 +46,9 @@
       "name": "Technical Database Engineer",
       "company": "Oracle",
       "address": "Dhaka, Bangladesh",
-      "sallary": "Salary : 100K - 150K"
+      "sallary": "Salary : 100K - 150K",
+      "phone": "+88 01726987488" ,
+      "email": "info@oracle.com" 
     },
     {
         "_id": "6",
@@ -45,7 +56,9 @@
         "name": "Software Engineer",
         "company": "Google LLC",
         "address": "Dhaka, Bangladesh",
-        "sallary": "Salary : 100K - 150K"
+        "sallary": "Salary : 100K - 150K",
+        "phone": "+88 01726978958",
+        "email": "info@google.com" 
       }
    
   ]
