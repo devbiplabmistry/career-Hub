@@ -7,23 +7,22 @@ import FeatureJob from '../FeatureJob/FeatureJob';
 const Home = () => {
   const jobs = useLoaderData();
   const [featurejob, setFeaturejobs] = useState([]);
-
+  const [feature, setFeture] = useState([])
   useEffect(() => {
     fetch('Feature.json')
       .then(res => res.json())
       .then(data => setFeaturejobs(data))
   }, [])
 
-
-  let Data = []
-  Data = featurejob.slice(0, 4);
+  useEffect(() => {
+    const f = featurejob.slice(0, 4)
+    setFeture(f)
+  }, [])
 
   const handleOnClick = () => {
-    Data = featurejob;
+    const p =featurejob;
+    setFeture(p)
   }
-
-
-
   return (
     <div>
       <Banner></Banner>
@@ -46,7 +45,7 @@ const Home = () => {
         <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
         <div className='grid grid-cols-2 gap-10'>
           {
-            Data.map(fjob => <FeatureJob
+            feature.map(fjob => <FeatureJob
               key={fjob._id}
               fjob={fjob}
             ></FeatureJob>)
