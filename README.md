@@ -4,3 +4,5 @@
 ***Blog part are the part where we discuss some important questions answer.
 ***when we click on remote job button we find remote job which we apply through apply now button.
 ***when we click on fulltime job button we find fulltime job which we apply through apply now button.
+
+live link :https://spontaneous-dragon-a22666.netlify.app/
