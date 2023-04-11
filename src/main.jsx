@@ -13,6 +13,7 @@ import Home from './Components/Home/Home';
 import Main from './Components/Layout/Main';
 import JobDetails from './Components/JobDetails/JobDetails';
 import AppliedJob from './Components/AppliedJob/AppliedJob';
+import Notfound from './Components/NotFound/Notfound';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
         path:'/jobDetails/:detailsId',
         element:<JobDetails></JobDetails>,
         loader:()=>fetch('Feature.json')
+      },
+      {
+        path:'/*',
+        element:<Notfound></Notfound>
+       
       }
     ]
   }
