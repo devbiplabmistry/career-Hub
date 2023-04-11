@@ -20,22 +20,25 @@ const AppliedJob = () => {
        setSavejob(saveJob)
     }, [])
 
-const [remotes,setRemotes]=useState([])
-    const handleRemote =()=>{   
-        const remote=saveJob.filter(remote=>remote.status ==='remote' ) 
-        const remot=[...remotes,remote]  
-        setRemotes(remot) 
-        
+    const handleRemote=()=>{
+        const savesJob=saveJob.filter(save=>save.status ==='remote')
+        setSavejob(savesJob)
     }
-  
+    const handleFullTime=()=>{
+        const saverJob=saveJob.filter(save=>save.status ==='fulltime')
+        setSavejob(saverJob)
+    }
+
+
+
 
     return (
         <div>
            <div>
             <h3 className='text-center title'>Applied Jobs</h3>
             <div className='mt-10'>
-                <button onClick={handleRemote} className='fulltime mr-5 absolute right-36 '>Remote</button>
-                <button className='fulltime absolute right-5'>Full Time</button>
+                <button onClick={handleRemote}  className='fulltime mr-5 absolute right-36 '>Remote</button>
+                <button onClick={handleFullTime} className='fulltime absolute right-5'>Full Time</button>
             </div>
             {
                 saveJob.map(job=><Savejob key={job._id} job={job}></Savejob>)
