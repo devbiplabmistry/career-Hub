@@ -6,22 +6,23 @@ import JobList from '../JobList/JobList';
 import FeatureJob from '../FeatureJob/FeatureJob';
 const Home = () => {
   const jobs = useLoaderData();
-  const [fjobs, setFjobs] = useState([]);
+  const [featurejob, setFeaturejobs] = useState([]);
 
   useEffect(() => {
     fetch('Feature.json')
       .then(res => res.json())
-      .then(data => setFjobs(data))
+      .then(data => setFeaturejobs(data))
   }, [])
 
-  let Data=[];
-  for (let i= 0; i < fjobs.length; i++) {
-   const element = fjobs[i];
-   if(Data.length < 4){
-     Data.push(element)
-   }
 
- }
+  let Data = []
+  Data = featurejob.slice(0, 4);
+
+  const handleOnClick = () => {
+    Data = featurejob;
+  }
+
+
 
   return (
     <div>
@@ -43,16 +44,15 @@ const Home = () => {
       <div className='container f  mt-10 '>
         <h2>Featured Jobs</h2>
         <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
-      <div className='grid grid-cols-2 gap-10'>
-      {
-          Data.map(fjob=><FeatureJob
-            key={fjob._id}
-            fjob={fjob} 
-          ></FeatureJob>) 
-        }
-
-      </div>
-      <button  className='seeAlljobs'>See All Jobs</button>
+        <div className='grid grid-cols-2 gap-10'>
+          {
+            Data.map(fjob => <FeatureJob
+              key={fjob._id}
+              fjob={fjob}
+            ></FeatureJob>)
+          }
+        </div>
+        <button onClick={handleOnClick} className='seeAlljobs'>See All Jobs</button>
       </div>
     </div>
   );

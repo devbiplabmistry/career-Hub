@@ -1,12 +1,15 @@
 import React from 'react';
-import './Savejob.css'
+import { useParams } from 'react-router-dom';
 
-const Savejob = ({job}) => {
-    const {picture,name,company,address,sallary}=job
+const Remote = () => {
 
+    const data =useParams()
+    console.log(data);
+   
+  
     return (
-     <div>           
-        <div className='container text-center job '>
+        <div>
+              {/* <div className='container text-center job '>
             <div className='save-job-container flex gap-x-24'>
                 <div className="save-job-logo">
                     <img src={picture} alt="" />
@@ -22,9 +25,9 @@ const Savejob = ({job}) => {
              <button className="save-job-btn">View Details</button>
              </div>
             </div> 
+        </div> */}
         </div>
-     </div>
     );
 };
 
-export default Savejob;
+export default Remote;

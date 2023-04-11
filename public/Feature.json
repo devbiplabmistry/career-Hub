@@ -28,7 +28,8 @@
       "address": "Dhaka, Bangladesh",
       "sallary": "Salary : 100K - 150K",
       "phone": "+88 01726987457" ,
-      "email": "info@tesla.com" 
+      "email": "info@tesla.com" ,
+      "status": "remote" 
     },
     {
       "_id": "4",
@@ -38,7 +39,8 @@
       "address": "Dhaka, Bangladesh",
       "sallary": "Salary : 100K - 150K",
       "phone": "+88 01726987454" ,
-      "email": "info@google.com" 
+      "email": "info@google.com",
+      "status": "fulltime" 
     },
     {
       "_id": "5",
@@ -48,7 +50,8 @@
       "address": "Dhaka, Bangladesh",
       "sallary": "Salary : 100K - 150K",
       "phone": "+88 01726987488" ,
-      "email": "info@oracle.com" 
+      "email": "info@oracle.com" ,
+      "status": "remote" 
     },
     {
         "_id": "6",
@@ -58,7 +61,8 @@
         "address": "Dhaka, Bangladesh",
         "sallary": "Salary : 100K - 150K",
         "phone": "+88 01726978958",
-        "email": "info@google.com" 
+        "email": "info@google.com" ,
+        "status": "fulltime" 
       }
    
   ]
